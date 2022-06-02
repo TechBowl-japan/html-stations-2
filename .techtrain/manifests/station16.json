@@ -1,0 +1,13 @@
+{
+  "name": "Station 16",
+  "id": 16,
+  "prepare": [],
+  "tests": [
+    {
+      "type": "command",
+      "title": "Node.jsのwebサーバの実行を確認（自己申告）",
+      "command": "echo",
+      "args": []
+    }
+  ]
+}

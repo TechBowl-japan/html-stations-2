@@ -16,4 +16,12 @@ describe('Station7', () => {
         expect(compareColor(a.css('color'), '#008000')).to.be.true
       })
   })
+
+  it('<a>のリンク先にTechTrainのマイページが設定されている', () => {
+    cy.get('a').should(
+      'have.attr',
+      'href',
+      'https://techbowl.co.jp/techtrain/mypage'
+    )
+  })
 })

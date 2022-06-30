@@ -1,6 +1,6 @@
 {
   "name": "Station 2",
-  "id": 2,
+  "id": 143,
   "prepare": [
     {
       "command": "yarn lite-server",

@@ -4,7 +4,7 @@
   "prepare": [
     {
       "command": "yarn lite-server",
-      "backgrond": true
+      "background": true
     }
   ],
   "tests": [

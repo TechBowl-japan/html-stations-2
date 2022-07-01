@@ -11,7 +11,7 @@ describe('Station1', () => {
     cy.get('ul').should('be.visible')
   })
 
-  it('<li>で囲われた「りんご」、「ばなな」、「どりあん」がそれぞれ表示されている', () => {
+  it('<li>で囲われた「りんご」、「ばなな」、「ぶどう」がそれぞれ表示されている', () => {
     cy.get('ul > li').contains('りんご').should('be.visible')
     cy.get('ul > li').contains('ばなな').should('be.visible')
     cy.get('ul > li').contains('ぶどう').should('be.visible')

@@ -21,7 +21,7 @@ describe('Station7', () => {
     cy.get('a').should(
       'have.attr',
       'href',
-      'https://techbowl.co.jp/techtrain/mypage'
+      'https://techtrain.dev/mypage'
     )
   })
 })

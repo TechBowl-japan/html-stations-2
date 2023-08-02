@@ -4,14 +4,30 @@ Railway では Git で自分が取り組んだ内容を記録するときに、�
 テストが通れば Station クリアとなります。
 クリア後、TechTrain の画面に戻り、クリアになっているかを確認してみてください。
 
+[ユーザーマニュアル](https://docs.google.com/presentation/d/1hyBsiAnIjDoaW6hqPe1veF-2NI0wL9cqS73RqLmz6EI/edit?usp=sharing)
+
 # 初期設定
 
 ### 必要なツール
 
-1. Node.js v14.17.0以降（v16.0.0以降を推奨します。）
-2. Yarn
+1. Node.js v16以降（v18以降を推奨します。）
+2. Yarn (v1)
+3. Visual Studio Code
+4. Railway VS Code拡張
 
-上記 2 つをインストールする必要があります。
+上記 4 つをインストールする必要があります。
+
+### インストール済みの場合
+
+```shell
+yarn install
+yarn playwright install
+code .
+```
+
+のコマンドを実行し、すぐに問題に取り組み始めることができます。
+
+Station の問題は、TechTrain の画面で確認してください。
 
 ### インストール済みの場合
 
@@ -276,3 +292,25 @@ https://techbowl.co.jp/techtrain/resetpassword
 ログインしていれば、次のURLから確認できます。
 
 https://techbowl.co.jp/techtrain/mypage/profile
+
+### 最新の状態に更新後、Gitでのコミットに失敗する場合
+
+TechTrain Railway CLIが最新の更新で取り除かれ、Railwayへの挑戦はVS Code機能拡張に一本化されます。
+そのため、Git Hooksに関連する機能も削除されました。すでに挑戦を開始している方は、pre-commit hookが残っておりGitでのコミットに失敗する可能性があります。その際は、
+
+
+```shell
+rm .git/hooks/pre-commit
+```
+
+を実行してください。
+
+### WSL（Windows）でテストが失敗する場合
+
+ヘッドレスブラウザによるE2Eによるテストの都合上、WSLではなくWindowsネイティブでの実行を推奨しています。
+
+WSLで本Railwayを進める際は、Playwrightの依存関係をWSL側にインストールする必要があります。
+
+```shell
+sudo yarn playwright install-deps
+```

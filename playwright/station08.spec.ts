@@ -21,25 +21,25 @@ test('フッターが指定の位置にある', async ({ page }) => {
 })
 
 test('アイテム1が指定の位置にある', async ({ page }) => {
-  const item1 = await page.locator('div:has-text("アイテム1")')
+  const item1 = await page.getByText('アイテム1')
   await expect(item1).toHaveCSS('grid-row', '2 / 5')
   await expect(item1).toHaveCSS('grid-column', '1 / 2')
 })
 
 test('アイテム2が指定の位置にある', async ({ page }) => {
-  const item2 = await page.locator('div:has-text("アイテム2")')
+  const item2 = await page.getByText('アイテム2')
   await expect(item2).toHaveCSS('grid-row', '2 / 3')
   await expect(item2).toHaveCSS('grid-column', '2 / 3')
 })
 
 test('アイテム3が指定の位置にある', async ({ page }) => {
-  const item3 = await page.locator('div:has-text("アイテム3")')
+  const item3 = await page.getByText('アイテム3')
   await expect(item3).toHaveCSS('grid-row', '3 / 4')
   await expect(item3).toHaveCSS('grid-column', '2 / 3')
 })
 
 test('アイテム4が指定の位置にある', async ({ page }) => {
-  const item4 = await page.locator('div:has-text("アイテム4")')
+  const item4 = await page.getByText('アイテム4')
   await expect(item4).toHaveCSS('grid-row', '4 / 5')
   await expect(item4).toHaveCSS('grid-column', '2 / 3')
 })

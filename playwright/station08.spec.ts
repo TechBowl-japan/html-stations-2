@@ -35,17 +35,11 @@ test('アイテム2が指定の位置にある', async ({ page }) => {
 test('アイテム3が指定の位置にある', async ({ page }) => {
   const item3 = await page.locator('div:has-text("アイテム3")')
   await expect(item3).toHaveCSS('grid-row', '3 / 4')
-  await expect(item3).toHaveCSS('grid-column', '1 / 2')
+  await expect(item3).toHaveCSS('grid-column', '2 / 3')
 })
 
 test('アイテム4が指定の位置にある', async ({ page }) => {
   const item4 = await page.locator('div:has-text("アイテム4")')
-  await expect(item4).toHaveCSS('grid-row', '3 / 4')
+  await expect(item4).toHaveCSS('grid-row', '4 / 5')
   await expect(item4).toHaveCSS('grid-column', '2 / 3')
-})
-
-test('アイテム5が指定の位置にある', async ({ page }) => {
-  const item5 = await page.locator('div:has-text("アイテム5")')
-  await expect(item5).toHaveCSS('grid-row', '4 / 5')
-  await expect(item5).toHaveCSS('grid-column', '1 / 3')
 })

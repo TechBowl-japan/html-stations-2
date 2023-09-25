@@ -1,4 +1,5 @@
 section{
     width: 600px;
     margin-bottom: 50px;
+    /* section内で横幅と余白下の大きさを調節。 */
 }

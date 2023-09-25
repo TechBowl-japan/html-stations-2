@@ -4,15 +4,19 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  /* ブロック要素とインライン要素をcenterに分けて配置する */
 }
 
-/* .outer{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.inner{
+/* <p  class="outer"></p>をブロック要素に入れる場合。 */
+/*  .outer{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 } */
+
+ /* <a class="inner"></a>をインライン要素に入れる場合 */
+/* .inner{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+} */ 

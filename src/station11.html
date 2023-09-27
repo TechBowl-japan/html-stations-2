@@ -9,6 +9,18 @@
   <body>
     <main>
       <form action="" method="post">
+        <p>
+        ニックネーム:
+        <input type="text" id="nickname" maxlength=20 value="" autocomplete="text" pattern="[ァ-ヴー\s]+" title="ニックネーム"/>
+        </p>
+        <p>
+        Email:
+        <input type="email" id="email" value="" style="ime-mode:disabled" placeholder="localname@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="メールアドレス" required /><br>
+        </p>
+        <p>
+        パスワード:
+        <input type="password" id="password" minlength=6 value="" style="ime-mode:disabled" placeholder="Abcd12" pattern="(?=.*?[a-z])(?=.*?[A-Z])(?=.*?\d)[a-zA-Z\d]{6,}" title="半角英大文字・半角英小文字・半角数字いれずれも必ず含む6文字以上" required /><br>
+        </p>
         <button type="submit">送信</button>
       </form>
     </main>

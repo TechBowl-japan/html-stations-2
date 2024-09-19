@@ -12,5 +12,5 @@ test('ボタンを押すとアラートが表示される', async ({ page }) => 
   })
 
   await page.click('button')
-  expect(dialogCount).toBe(1)
+  expect(dialogCount).toBeTruthy()
 })

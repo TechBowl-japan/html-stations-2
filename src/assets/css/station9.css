@@ -1,0 +1,14 @@
+#animation {
+  animation-duration: 3s;
+  animation-name: fadein;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

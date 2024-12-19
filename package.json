@@ -16,8 +16,5 @@
     "serve": "lite-server",
     "postinstall": "yarn hook:update"
   },
-  "simple-git-hooks": {},
-  "dependencies": {
-    "cypress-real-events": "^1.7.0"
-  }
+  "simple-git-hooks": {}
 }

@@ -16,5 +16,8 @@
     "serve": "lite-server",
     "postinstall": "yarn hook:update"
   },
-  "simple-git-hooks": {}
+  "simple-git-hooks": {},
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
 }

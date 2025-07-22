@@ -8,15 +8,11 @@
     "expect-playwright": "^0.8.0",
     "lite-server": "^2.6.1",
     "prettier": "^2.4.1",
-    "simple-git-hooks": "^2.6.1",
     "typescript": "^5.1.6"
   },
   "scripts": {
-    "hook:update": "simple-git-hooks",
-    "serve": "lite-server",
-    "postinstall": "yarn hook:update"
+    "serve": "lite-server"
   },
-  "simple-git-hooks": {},
   "dependencies": {
     "cypress-real-events": "^1.7.0"
   }

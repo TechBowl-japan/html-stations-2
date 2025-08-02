@@ -1,0 +1,13 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#animation {
+  /* アニメーションの名前、時間、タイミング、終了後の状態をまとめて指定 */
+  animation: fadeIn 2s ease-in-out forwards;
+}

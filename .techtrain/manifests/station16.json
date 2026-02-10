@@ -1,7 +1,6 @@
 {
   "name": "Station 16",
   "id": 158,
-  "prepare": [],
   "tests": [
     {
       "type": "command",
